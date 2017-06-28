@@ -1,4 +1,4 @@
-package com.employment.ejb.cdi;
+package com.employment.jee.ejb.cdi;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -11,7 +11,8 @@ import javax.persistence.PersistenceUnit;
 public class DeptService {
 
     // field dependency injection
-    @EJB AuditService audit;
+    @EJB
+    AuditService audit;
 
     // setter injection
     @EJB

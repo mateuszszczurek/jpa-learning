@@ -1,4 +1,4 @@
-package com.employment.ejb.session_beans;
+package com.employment.jee.ejb.session_beans;
 
 import javax.ejb.Remove;
 import javax.ejb.Stateful;

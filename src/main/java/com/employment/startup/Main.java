@@ -5,16 +5,18 @@ import com.employment.actions.Action;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class Main {
 
-    public static void main(String[] args) throws ClassNotFoundException, SQLException, InterruptedException {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException, InterruptedException, IOException {
 
         EntityManagerFactory emf = null;
         EntityManager em = null;
 
         try {
+
             emf = Persistence.createEntityManagerFactory("EmployeeService");
 
             em = emf.createEntityManager();

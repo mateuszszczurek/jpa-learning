@@ -31,7 +31,7 @@ public class EmployeeService {
     }
 
     public List<Employee> findEmployesWithSalaryHigherThan(long salary) {
-        TypedQuery<Employee> query = em.createQuery("SELECT e FROM Employee e WHERE e.salary > ?", Employee.class);
+        TypedQuery<Employee> query = em.createQuery("SELECT e FROM EmployeeDefaultFieldAcces e WHERE e.salary > ?", Employee.class);
         query.setParameter(0, salary);
         return query.getResultList();
     }
